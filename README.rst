@@ -1,13 +1,15 @@
 deploy_vim_conf_git
-=====================
+===================
 
-Deploys a .vim config from a Git repository and uses Pathogen to install plugins.
-
+A simple role for deploying a .vim config from a Git repository. It can use
+Pathogen to install plugins.
 
 Requirements
 ------------
 
-A git repository with your .vim configuration.
+* git>=1.7.1 (the command line tool)
+
+* A git repository with your .vim configuration.
 
 Role Variables
 --------------
@@ -43,8 +45,14 @@ License
 
 MIT
 
+pathogen.vim_ is copyrighted by Tim Pope. Distributed under the same terms as Vim
+itself. See :help license.
+
 Author Information
 ------------------
 
 An optional section for the role authors to include contact information, or a
 website (HTML is not allowed).
+
+
+.. _pathogen.vim: https://github.com/tpope/vim-pathogen

@@ -1,2 +1,24 @@
+# deploy_vim_conf_git/tasks/main.yml
+# vim: ai et ts=2 sw=2 sts=2 ft=yaml fileencoding=UTF-8
 ---
-# tasks file for deploy_vim_conf_git
+- name: Get home directory
+  set_fact:
+    home_dir: "{{ lookup('env', 'HOME') }}"
+    repo: https://github.com/maartenq/vimconf.git
+
+- name: Get vimconf from Git repo
+  git:
+    repo: "{{ repo }}"
+    version: master
+    dest: "{{ home_dir }}/.vim"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+  register: status_git_pull
+
+- name: Symlink {{ home_dir }}/.vimrc to {{ home_dir }}/.vimrc
+  file:
+    src: .vim/vimrc
+    path: "{{ home_dir }}/.vimrc"
+    force: yes
+    state: link

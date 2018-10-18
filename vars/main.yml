@@ -1,2 +1,5 @@
+# deploy_vim_conf_git/vars/main.yml
+# vim: ai et ts=2 sw=2 sts=2 ft=yaml fileencoding=UTF-8
 ---
-# vars file for deploy_vim_conf_git
+deploy_vim_conf_git_pathogen_url: https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
