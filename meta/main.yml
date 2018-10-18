@@ -1,6 +1,6 @@
 galaxy_info:
   author: Maarten
-  description: Ansible Role for configuring Vim with .vim for a Git repository and Pathogen plugin en runtime manager.
+  description: Deploys a .vim  config for a Git repository and uses Pathogen to install plugins.
   license: MIT
   min_ansible_version: 2.4
   platforms:
@@ -12,4 +12,5 @@ galaxy_info:
     - editor
     - config
     - pathogen
+    - git
 dependencies: []
