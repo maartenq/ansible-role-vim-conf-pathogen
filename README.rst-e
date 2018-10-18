@@ -1,4 +1,4 @@
-deploy_vim_conf_git
+vim_git_conf_pathogen
 =====================
 
 Ansible Role for configuring Vim with .vim for a Git repository and Pathogen
@@ -35,7 +35,7 @@ passed in as parameters) is always nice for users too:
 
     - hosts: localhost
       roles:
-         - role: maartenq.deploy_vim_conf_git
+         - role: maartenq.vim_git_conf_pathogen
 
 
 License
