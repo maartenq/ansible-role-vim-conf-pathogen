@@ -1,8 +1,8 @@
 deploy_vim_conf_git
 =====================
 
-Ansible Role for configuring Vim with .vim for a Git repository and Pathogen
-plugin en runtime manager.
+Deploys a .vim config from a Git repository and uses Pathogen to install plugins.
+
 
 Requirements
 ------------
