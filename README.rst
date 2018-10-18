@@ -31,12 +31,12 @@ Example Playbook
 Including an example of how to use your role (for instance, with variables
 passed in as parameters) is always nice for users too:
 
-.. code_block:: yaml
+.. code-block:: yaml
 
-    - hosts: servers
+    - hosts: localhost
       roles:
-         - role:
-            maartenq.vim_git_conf_pathogen
+         - role: maartenq.vim_git_conf_pathogen
+
 
 License
 -------
